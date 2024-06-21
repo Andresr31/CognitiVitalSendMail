@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Customer extends Model
+class Contact extends Model
 {
     use HasFactory;
 
@@ -15,13 +15,14 @@ class Customer extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'age',
-        'email',
+        'subject',
+        'message',
+        'customer_id',
     ];
 
-    public function contacts(){
-        return $this->hasMany('App\Models\Contact');
+    ////////////////////////////////////
+    // Relaciones
+    public function customer(){
+        return $this->belongsTo('App\Models\Customer');
     }
-
 }

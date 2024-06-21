@@ -79,8 +79,9 @@
             
         </div>
         <div class="content">
-            <h1 style="color: #167a63;">¡Hola {{$name}}!</h1>
+            <h1 style="color: #167a63;">¡Hola {{$customer->name}}!</h1>
             <h2>¡Gracias por contactarte con nosotros!</h2>
+            <h2>Un integrante de nuestro equipo dará respuesta a tu mensaje</h2>
             <p>Nos complace saber de ti, te informaremos sobre futuras novedades. Para agradecer tu interés, te ofrecemos nuestras cartillas de estimulación sobre deterioro cognitivo, selecciona su portada para descargarla.</p>
             <div class="gift">
                 🎁 ¡Recibiste un obsequio especial de CognitiVital!

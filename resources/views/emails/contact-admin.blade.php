@@ -79,16 +79,12 @@
             
         </div>
         <div class="content">
-            <h1 style="color: #167a63;">¡Hola {{$name}}!</h1>
-            <h2>¡Gracias por contactarte con nosotros!</h2>
-            <p>Nos complace saber de ti, te informaremos sobre futuras novedades. Para agradecer tu interés, te ofrecemos nuestras cartillas de estimulación sobre deterioro cognitivo, selecciona su portada para descargarla.</p>
-            <div class="gift">
-                🎁 ¡Recibiste un obsequio especial de CognitiVital!
-            </div>
-            <div class="books-images">
-                <a href="https://editorial.autonoma.edu.co/index.php/libros/catalog/download/50/51/144?inline=1" target="_blank"><img src="https://cognitivital.com/assets/img/book-one.png"  alt="" width="208px" height="250px"></a>
-                <a href="https://editorial.autonoma.edu.co/index.php/libros/catalog/download/63/66/390?inline=1" target="_blank"><img src="https://cognitivital.com/assets/img/book-two.png"  alt="" width="208px" height="250px"></a>
-            </div>
+            <h1 style="color: #167a63;">¡Hola!</h1>
+            <h2>¡Recibiste una interacción en la página web de CognitiVital!</h2>
+            <p><strong>Usuario: </strong> {{$customer->name}} - {{$customer->email}}</p>
+            <p><strong>Asunto: </strong>{{$contact->subject}}</p>
+            <p><strong>Mensaje: </strong>{{$contact->message}}</p>
+
         </div>
         <div class="footer">
             <p>&copy; 2024 <a href="https://cognitivital.com/" target="_blank" style="color: white;">CognitiVital.</a> Todos los derechos reservados.</p>
